@@ -1,27 +1,31 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="problox.js"></script>
+		<title>Problox</title>
+		<meta name="description" content="Enhanced game search for Roblox using jQuery that adds filters, sorting and additional game information to each tile">
 	</head>
 	<body>
 		<div id="search">
 			<div id="logo">
-				<img src="img/logo.png">
+				<img src="img/logo.png" alt="PROBLOX">
 			</div>
-			<form>
-				<input id="searchbox" name="Keyword" type="text" placeholder="Search games" maxlength="120">
+			<form title="Search">
+				<input id="searchbox" name="Keyword" type="text" placeholder="Search games" maxlength="120" title="Search keyword">
 				<input id="backbutton" type="text" style="display: none;">
-				<button id="searchsubmit" type="submit">
+				<button id="searchsubmit" type="submit" title="Submit">
 					<span class="look icon"></span>
 				</button>
-				<select id="searchsize" name="MaxRows">
+				<select id="searchsize" name="MaxRows" title="Max results">
 					<option value="40">40</option>
 					<option value="80">80</option>
 					<option value="120">120</option>
 				</select>
-				<select id="searchsort" name="SortBy">
+				<select id="searchsort" name="SortBy" title="Sort by">
 					<option value="default">Default</option>
 					<option value="players">Players</option>
 					<option value="up">Upvotes</option>
@@ -29,7 +33,7 @@
 					<option value="ratio">Ratio</option>
 					<option value="plays">Plays</option>
 				</select>
-				<select id="searchorder" name="OrderBy" disabled>
+				<select id="searchorder" name="OrderBy" title="Order by" disabled>
 					<option value="desc">Descending</option>
 					<option value="asce">Ascending</option>
 				</select>
@@ -37,6 +41,6 @@
 		</div>
 		<div class="results">
 		</div>
-		<img id="loading" src="img/loading.gif">
+		<img id="loading" src="img/loading.gif" alt="loading...">
 	</body>
 </html>
