@@ -40,7 +40,7 @@ input:focus, select:focus, button:focus {
 	background-color: #FFFFFF;
 }
 #search .icon {
-	background-image: url("nav.svg");
+	background-image: url("img/nav.svg");
 	background-repeat: no-repeat;
 	vertical-align: middle;
 	display: inline-block;
@@ -135,7 +135,7 @@ a, a:visited, a:active {
 	background-size: 32px auto;
 	width: 16px;
 	height: 16px;
-	background-image: url("icons.svg");
+	background-image: url("img/icons.svg");
 	background-repeat: no-repeat;
 	vertical-align: middle;
 	display: inline-block;
