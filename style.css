@@ -7,14 +7,13 @@ body {
 	background-color: #0074BD;
 	padding: 0 10px;
 	height: 40px;
-	line-height: 40px;
 }
 input, select, button {
 	float: left;
 	margin-top: 6px;
 	height: 28px;
 	border: 1px solid #B8B8B8;
-	padding: 5px 12px;
+	padding: 0 12px;
 	border-radius: 3px;
 	font: inherit;
 }
@@ -28,6 +27,7 @@ input:focus, select:focus, button:focus {
 	outline: 0;
 }
 #searchbox {
+	height: 26px;
 	border-radius: 3px 0 0 3px;
 	border-right: 0 none;
 	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
@@ -108,8 +108,7 @@ a, a:visited, a:active {
 }
 #logo img {
 	position: relative;
-	top: 50%;
-	margin-top: -11px;
+	margin-top: 10px;
 }
 #logo, form {
 	float: left;
