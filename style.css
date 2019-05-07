@@ -1,0 +1,170 @@
+body {
+	background-color: #E3E3E3;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#search {
+	background-color: #0074BD;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+}
+input, select, button {
+	float: left;
+	margin-top: 6px;
+	height: 28px;
+	border: 1px solid #B8B8B8;
+	padding: 5px 12px;
+	border-radius: 3px;
+	font: inherit;
+}
+button, select {
+	margin-right: 6px;
+}
+select {
+	padding: 0px 12px;
+}
+input:focus, select:focus, button:focus {
+	outline: 0;
+}
+#searchbox {
+	border-radius: 3px 0 0 3px;
+	border-right: 0 none;
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+#searchsubmit {
+	border-radius: 0 3px 3px 0;
+	border-left: 0 none;
+	width: 33px;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+#search .icon {
+	background-image: url("nav.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+}
+.look.icon {
+	background-position: 0 -80px;
+	height: 20px;
+	width: 20px;
+	background-size: 40px auto;
+}
+.game {
+  	vertical-align: top;
+	width: 150px;
+	height: 246px;
+	margin: 0 14px 12px 0;
+	display: inline-block;
+	background-color: #FFFFFF;
+	position: relative;
+}
+.game:hover {
+	transition: transform 150ms;
+	transform: scale(1.08,1.08);
+}
+.gamethumb {
+	width: 150px;
+	height: 150px;
+}
+.gametitle {
+	word-break: break-word;
+  	width: 124px;
+	max-height: 40px;
+	overflow: hidden;
+	position: relative;
+	line-height: 20px;
+	margin-right: -13px;
+	padding: 6px 20px 0 6px;
+}
+.gametitle:before {
+	content: '...';
+	position: absolute;
+	right: 6px;
+	bottom: 0;
+}
+.gametitle:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 1.1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background: #ffffff
+}
+.results {
+	margin: 12px;
+}
+a, a:visited, a:active {
+	text-decoration: none;
+	color: #000000;
+}
+#logo {
+	color: #ffffff;
+	padding-right: 10px;
+	height: 100%;
+
+}
+#logo img {
+	position: relative;
+	top: 50%;
+	margin-top: -11px;
+}
+#logo, form {
+	float: left;
+	display: inline-block;
+}
+.gamedetails {
+	font-size: 14px;
+	position: absolute;
+	bottom: 23px;
+	padding: 0 6px 6px;
+}
+.gamedetails.extended {
+	bottom: 0px;
+}
+#loading {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 70px;
+	display: none;
+}
+.gamedetails .icon {
+	background-size: 32px auto;
+	width: 16px;
+	height: 16px;
+	background-image: url("icons.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+}
+.gamedetails .players.icon {
+	background-position: 0 -496px;
+}
+.gamedetails .votes.icon {
+	background-position: 0 -480px;
+}
+.gamedetails .plays.icon {
+	background-position: 0 -80px;
+}
+.gamedetails .plays {
+	display: none;
+}
+.game:hover .plays {
+	display: inline-block;
+}
+.game:hover .players {
+	display: none;
+}
+.gamedetails.extended .upvotes.icon {
+	background-position: 0 -48px;
+}
+.gamedetails.extended .downvotes.icon {
+	background-position: 0 -64px;
+}
+.detailtext {
+	vertical-align: middle;
+	padding: 0 10px 0 3px;
+}
